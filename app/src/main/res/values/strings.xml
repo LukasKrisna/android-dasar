@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pemrograman Berbasis Objek</string>
+    <string name="nama">Lukas Krisna Prastiyan</string>
+    <string name="nim">202201011</string>
+    <string name="tambah">Tambah</string>
+    <string name="tombolUTS">UTS</string>
+    <string name="hasil">*hasil akan muncul di sini*</string>
+    <string name="tombolHasil">Hasil</string>
+</resources>
