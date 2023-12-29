@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button counterButton = findViewById(R.id.buttonTambah);
         Button pindahActivityUTS = findViewById(R.id.buttonUTS);
+        Button pindahActivityIntent = findViewById(R.id.buttonIntent);
         textView = findViewById(R.id.textView);
         nama = findViewById(R.id.textView2);
 
@@ -39,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 pindahActivityUTS();
             }
+        });
+
+        pindahActivityIntent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { pindahActivityIntent(); }
         });
     }
 
@@ -59,6 +65,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void pindahActivityUTS(){
         Intent intent = new Intent(this, UtsActivity.class);
+        startActivity(intent);
+    }
+    private void pindahActivityIntent(){
+        Intent intent = new Intent(this, IntentForm.class);
         startActivity(intent);
     }
 }
